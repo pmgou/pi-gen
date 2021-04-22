@@ -1,7 +1,7 @@
 set -x
 
 log (){
-        DIR_LOG_FILE="$(basename -- $LOG_FILE)"
+        DIR_LOG_FILE="$(basename -- \"$LOG_FILE\")"
 	mkdir -p "${DIR_LOG_FILE}"
 	date +"[%T] $*" | tee -a "${LOG_FILE}"
 }
