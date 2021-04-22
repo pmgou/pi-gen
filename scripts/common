@@ -1,3 +1,5 @@
+set -x
+
 log (){
         DIR_LOG_FILE="$(basename -- $LOG_FILE)"
 	mkdir -p "${DIR_LOG_FILE}"
